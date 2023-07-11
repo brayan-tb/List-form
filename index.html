@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>List Form 📝</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="src/style.css" />
 </head>
+
 <body>
-    
+    <main>
+        <form class="container" method="post">
+            <h2>Avaliação</h2>
+            <label for="name">Nome Produto:</label>
+            <input type="text" name="name" id="name" placeholder="Nome..." autocomplete="off" autocapitalize required />
+
+            <label for="yes">Recomendaria:</label>
+
+            <div class="radio-group">
+                <label for="yes">
+                    <input type="radio" id="yes" name="recommend" value="yes" required />
+                    <span class="radio-button"></span>
+                    <span for="yes">Sim</span>
+                </label>
+                <label for="no">
+                    <input type="radio" id="no" name="recommend" value="no" required />
+                    <span class="radio-button"></span>
+                    <span>Não</span>
+                </label>
+            </div>
+
+            <label for="feature1">Recursos Favoritos:</label>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" id="feature1" name="features" value="feature1" />
+                    <span class="checkbox-button"></span>
+                    <span>Cor</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="feature2" name="features" value="feature2" />
+                    <span class="checkbox-button"></span>
+                    <span>Preço</span>
+                </label>
+                <label>
+                    <input type="checkbox" id="feature3" name="features" value="feature3" />
+                    <span class="checkbox-button"></span>
+                    <span>Qualidade</span>
+                </label>
+            </div>
+            <label for="rating">Avaliação:</label>
+            <select id="rating" name="rating" required>
+                <option value="">Selecione</option>
+                <option value="5">Excelente</option>
+                <option value="4">Muito Bom</option>
+                <option value="3">Bom</option>
+                <option value="2">Regular</option>
+                <option value="1">Ruim</option>
+            </select>
+
+            <button type="submit" id="save">Salvar</button>
+            <button type="reset" id="reset">Cancelar</button>
+        </form>
+
+        <ul class="container list-item">
+            <li>
+                <div class="item"></div>
+                <div class="item-details">
+                    <div class="item-name">Nome a</div>
+                    <div class="item-features">Cor, preço, qualidade</div>
+                    <div class="item-rating">Avaliação: Muito bom</div>
+                    <div class="item-recommend">Recomendaria: Sim</div>
+                </div>
+            </li>
+        </ul>
+
+    </main>
 </body>
 <script src="src/main.js"></script>
+
 </html>
