@@ -12,59 +12,66 @@
 <body>
     <main>
         <form class="container" method="post">
-            <h2>Avaliação</h2>
-            <label for="name">Nome Produto:</label>
-            <input type="text" name="name" id="name" placeholder="Nome..." autocomplete="off" autocapitalize required />
 
-            <label for="yes">Recomendaria:</label>
+            <h2>Avaliação</h2>
+
+            <label>Nome Produto</label>
+
+            <input type="text" name="name" id="name" placeholder="Nome..." autocomplete="off" autocapitalize="words" required />
+
+            <label>Recomendaria</label>
 
             <div class="radio-group">
                 <label for="yes">
-                    <input type="radio" id="yes" name="recommend" value="yes" required />
+                    <input type="radio" id="yes" name="recommend" value="Sim" />
                     <span class="radio-button"></span>
                     <span for="yes">Sim</span>
                 </label>
                 <label for="no">
-                    <input type="radio" id="no" name="recommend" value="no" required />
+                    <input type="radio" id="no" name="recommend" value="Não" />
                     <span class="radio-button"></span>
                     <span>Não</span>
                 </label>
             </div>
 
-            <label for="feature1">Recursos Favoritos:</label>
+            <label>Recursos</label>
+
             <div class="checkbox-group">
                 <label>
-                    <input type="checkbox" id="feature1" name="features" value="feature1" />
+                    <input type="checkbox" id="feature1" name="features" value="Cor" />
                     <span class="checkbox-button"></span>
                     <span>Cor</span>
                 </label>
                 <label>
-                    <input type="checkbox" id="feature2" name="features" value="feature2" />
+                    <input type="checkbox" id="feature2" name="features" value="Preço" />
                     <span class="checkbox-button"></span>
                     <span>Preço</span>
                 </label>
                 <label>
-                    <input type="checkbox" id="feature3" name="features" value="feature3" />
+                    <input type="checkbox" id="feature3" name="features" value="Qualidade" />
                     <span class="checkbox-button"></span>
                     <span>Qualidade</span>
                 </label>
             </div>
-            <label for="rating">Avaliação:</label>
+
+            <label for="rating">Avaliação</label>
+
             <select id="rating" name="rating" required>
                 <option value="">Selecione</option>
-                <option value="5">Excelente</option>
-                <option value="4">Muito Bom</option>
-                <option value="3">Bom</option>
-                <option value="2">Regular</option>
-                <option value="1">Ruim</option>
+                <option>Excelente</option>
+                <option>Muito Bom</option>
+                <option>Bom</option>
+                <option>Regular</option>
+                <option>Ruim</option>
             </select>
 
             <button type="submit" id="save">Salvar</button>
             <button type="reset" id="reset">Cancelar</button>
+
         </form>
 
         <ul class="container list-item">
-            <li>
+            <!-- <li>
                 <div class="item"></div>
                 <div class="item-details">
                     <div class="item-name">Nome a</div>
@@ -72,7 +79,7 @@
                     <div class="item-rating">Avaliação: Muito bom</div>
                     <div class="item-recommend">Recomendaria: Sim</div>
                 </div>
-            </li>
+            </li> -->
         </ul>
 
     </main>
