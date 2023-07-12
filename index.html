@@ -25,12 +25,12 @@
             <div class="radio-group">
                 <label for="yes">
                     <input type="radio" id="yes" name="recommend" value="Sim" />
-                    <span class="radio-button"></span>
+                    <span tabindex="0" class="radio-button"></span>
                     <span for="yes">Sim</span>
                 </label>
                 <label for="no">
                     <input type="radio" id="no" name="recommend" value="Não" />
-                    <span class="radio-button"></span>
+                    <span tabindex="0" class="radio-button"></span>
                     <span>Não</span>
                 </label>
             </div>
@@ -40,17 +40,17 @@
             <div class="checkbox-group">
                 <label>
                     <input type="checkbox" id="feature1" name="features" value="Cor" />
-                    <span class="checkbox-button"></span>
+                    <span tabindex="0" class="checkbox-button"></span>
                     <span>Cor</span>
                 </label>
                 <label>
                     <input type="checkbox" id="feature2" name="features" value="Preço" />
-                    <span class="checkbox-button"></span>
+                    <span tabindex="0" class="checkbox-button"></span>
                     <span>Preço</span>
                 </label>
                 <label>
                     <input type="checkbox" id="feature3" name="features" value="Qualidade" />
-                    <span class="checkbox-button"></span>
+                    <span tabindex="0" class="checkbox-button"></span>
                     <span>Qualidade</span>
                 </label>
             </div>
@@ -66,7 +66,7 @@
                 <option>Ruim</option>
             </select>
 
-            <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
                 <button type="submit" id="save">
                     <span id="saveText">Salvar</span>
                     <div id="loading" class="loading"></div>

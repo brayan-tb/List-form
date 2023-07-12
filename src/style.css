@@ -78,23 +78,11 @@ button:disabled {
   opacity: 0.75;
 }
 
-/* #message{
-  display: none;
-  font-size: 14px;
-} */
-
 .error{
   display: block;
   color: red; 
   font-size: 14px;
 }
-
-/*
- .sucess{
-  display: block;
-  color: #45a049; 
-  font-size: 14px;
-} */
 
 /* Estilos para o selection */
 #rating {
@@ -156,6 +144,7 @@ button:disabled {
 
 .checkbox-group {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
@@ -291,7 +280,35 @@ button:disabled {
   main {
     flex-wrap: nowrap;
   }
+  form {
+    height: fit-content;
+  }
   .list-item {
     max-width: 80%;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .list-item li{
+    padding: 15px;
+    width: 100%;
+    height: fit-content;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .list-item li:nth-child(even) {
+    margin-top: 0;
+  }
+
+}
+
+@media (min-width: 1340px) and (min-height: 650px) {
+  .list-item li{
+    width: fit-content;
   }
 }
