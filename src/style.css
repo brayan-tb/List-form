@@ -66,7 +66,35 @@ button {
 
 button:hover {
   background-color: #45a049;
+  /* transition: all 0.5s ease; */
+  transform: scale(1.06);
 }
+
+button:disabled {
+  pointer-events: none;
+  background-color: #f1f1f1;
+  color: #45a049;
+  min-width: 75px;
+  opacity: 0.75;
+}
+
+/* #message{
+  display: none;
+  font-size: 14px;
+} */
+
+.error{
+  display: block;
+  color: red; 
+  font-size: 14px;
+}
+
+/*
+ .sucess{
+  display: block;
+  color: #45a049; 
+  font-size: 14px;
+} */
 
 /* Estilos para o selection */
 #rating {
@@ -218,6 +246,41 @@ button:hover {
 .list-item li .item-details .item-features {
   color: #777;
   text-transform: capitalize;
+}
+
+.loading {
+  display: none;
+  width: 19px;
+  height: 19px;
+  margin: 0 auto;
+  background-color: #4caf50;
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% {
+      -webkit-transform: scale(0)
+  }
+
+  100% {
+      -webkit-transform: scale(1.0);
+      opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+  }
+
+  100% {
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+      opacity: 0;
+  }
 }
 
 /* Responsividade */

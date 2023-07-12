@@ -17,7 +17,8 @@
 
             <label>Nome Produto</label>
 
-            <input type="text" name="name" id="name" placeholder="Nome..." autocomplete="off" autocapitalize="words" required />
+            <input type="text" name="name" id="name" placeholder="Nome..." autocomplete="off" autocapitalize="words"
+                required />
 
             <label>Recomendaria</label>
 
@@ -65,9 +66,17 @@
                 <option>Ruim</option>
             </select>
 
-            <button type="submit" id="save">Salvar</button>
-            <button type="reset" id="reset">Cancelar</button>
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <button type="submit" id="save">
+                    <span id="saveText">Salvar</span>
+                    <div id="loading" class="loading"></div>
+                </button>
 
+                <button type="reset" id="reset">
+                    <span>Cancelar</span>
+                </button>
+                <span id="message"></span>
+            </div>
         </form>
 
         <ul class="container list-item">
