@@ -15,6 +15,7 @@ body {
 
 main {
   display: flex;
+  flex-direction: column;
   gap: 12px;
   flex-wrap: wrap;
 }
@@ -29,7 +30,7 @@ main {
 }
 
 form {
-  max-width: 500px;
+  max-width: 615px;;
   width: 100%;
   margin: 0 auto;
 }
@@ -54,7 +55,7 @@ input[type="checkbox"] {
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #4CAF60;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -134,7 +135,7 @@ button:disabled {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #4caf50;
+  background-color: #4CAF60;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -177,7 +178,7 @@ button:disabled {
     width: 10px;
     height: 10px;
     border-radius: 2px;
-    background-color: #4CAF50;
+    background-color: #4CAF60;
     opacity: 0;
     transition: opacity 0.23s ease-in-out;
 }
@@ -189,7 +190,7 @@ button:disabled {
 /* list-item */
 
 .list-item {
-  max-width: 500px;
+  max-width: 615px;;
   list-style: none;
   padding: 20px;
 }
@@ -211,7 +212,7 @@ button:disabled {
 .list-item li .item {
   width: 17px;
   height: 17px;
-  background-color: #4caf50;
+  background-color: #4CAF60;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -242,7 +243,7 @@ button:disabled {
   width: 19px;
   height: 19px;
   margin: 0 auto;
-  background-color: #4caf50;
+  background-color: #4CAF60;
   border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -277,38 +278,17 @@ button:disabled {
   body {
     padding: 20px;
   }
+
   main {
     flex-wrap: nowrap;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-right: calc(3rem * .5);
+    padding-left: calc(3rem * .5);
   }
+
   form {
     height: fit-content;
   }
-  .list-item {
-    max-width: 80%;
-    min-height: 95vh;
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
 
-  .list-item li{
-    padding: 15px;
-    width: 100%;
-    height: fit-content;
-    background-color: #f1f1f1;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  .list-item li:nth-child(even) {
-    margin-top: 0;
-  }
-
-}
-
-@media (min-width: 1340px) and (min-height: 650px) {
-  .list-item li{
-    width: fit-content;
-  }
 }
